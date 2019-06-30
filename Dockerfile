@@ -1,4 +1,4 @@
-FROM php:fpm-alpine
+FROM arm64v8/php:rc-fpm-alpine
 
 COPY docker-entrypoint.sh php.ini default.conf /
 RUN apk add --no-cache \
